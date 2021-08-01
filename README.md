@@ -1,5 +1,5 @@
 # ssl-checker
-A command-line tool for verify and sent alert on SSL expire
+A command-line tool for Check SSL Cert Expiry.
 
 # Usage
 
