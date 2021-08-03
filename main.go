@@ -7,6 +7,8 @@ import (
 	"log"
 	"strings"
 	"time"
+
+	"github.com/dustin/go-humanize"
 )
 
 func main() {
@@ -31,5 +33,6 @@ func main() {
 
 		expiry := conn.ConnectionState().PeerCertificates[0].NotAfter
 		fmt.Printf("Host: %s\nIssuer: %s\nExpiry: %v\n", value, conn.ConnectionState().PeerCertificates[0].Issuer, expiry.Format(time.RFC850))
+		fmt.Println("Duration: ", humanize.Time(conn.ConnectionState().PeerCertificates[0].NotAfter)+"\n")
 	}
 }
