@@ -11,5 +11,5 @@ ssl-checker -h
 
 example:
 ssl-checker -host example.com
-ssl-checker -host example.com,abc.com
+ssl-checker -host example.com,sample.com
 ```
